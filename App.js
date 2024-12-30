@@ -40,9 +40,7 @@ function closeGoalHandler(){
    <GoalInput  onClose={closeGoalHandler} visible={isModalVisible} onAddGoal={addGoalHandler}/> 
       <View style={styles.goalsContainer}>
     
-      <FlatList 
-      
-      data={goals} 
+      <FlatList data={goals} 
       renderItem={(itemData) =>{
         return <GoalItem text={itemData.item} onDelete={() => deleteItem(itemData.index)}/>
 }}
